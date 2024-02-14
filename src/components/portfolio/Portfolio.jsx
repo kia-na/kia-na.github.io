@@ -8,9 +8,10 @@ function Portfolio() {
             <li>Resume</li>
             <li>Projects</li>
           </ul>
-          <div>
-            <span>
+          <div className="info_container">
+            <span className="name">
               <span>Kiana</span>
+              <br />
               <span>Esmaili</span>
             </span>
             <p>
@@ -25,6 +26,7 @@ function Portfolio() {
           <img src="pic.png" alt="personal_pic" />
           {/* <span className="pic"></span> */}
         </div>
+        <div className="content_bottom"></div>
       </div>
     </div>
   );
