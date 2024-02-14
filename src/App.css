@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+:root {
+  --text: #fff;
+  --main-color: #7f6e9c;
+  --side--color: #9c84b8;
+  --main-dark: #212025;
+  --side-dark: #1e1d21;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  background-color: var(--main-color);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content_container {
+  width: 90%;
+  height: 90vh;
+  background-color: var(--main-dark);
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content_info {
+  /* background-color: green; */
+  height: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+ul {
+  width: 50%;
+
+  /* background-color: blue; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: var(--text);
+  font-weight: 200;
+  cursor: pointer;
+}
+.content_pic {
+  width: 40%;
+  height: 100%;
+  /* background-color: azure; */
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.content_pic img {
+  width: 27rem;
+  /* mix-blend-mode: darken; */
+  /* background-blend-mode: hard-light; */
+  /* background-color: gray; */
+  z-index: 10;
+  padding-bottom: 8rem;
 }
+/* .pic {
+  background-color: #2120256c;
+  width: 30rem;
+  height: 34.5rem;
+  z-index: 15;
+  position: absolute;
+  top: 0;
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pic_backColor {
+  width: 16%;
+  height: 70.8%;
+  background-color: var(--side--color);
+  position: absolute;
+  top: 0;
+  right: 12%;
+  z-index: 5;
 }
